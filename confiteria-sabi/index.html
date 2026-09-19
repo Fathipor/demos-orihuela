@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confitería Sabi | Obrador Tradicional & El Auténtico Pastel de Carne de Orihuela</title>
+  <meta name="description" content="Hojaldres recién horneados, milhojas de merengue suizo y los legendarios pasteles de carne oriolanos. Tradición y repostería artesana para tus mejores momentos. Dirección: Plaza Nueva, 2, 03300 Orihuela, Alicante. Tel: 966 74 23 08. Valoración de 4.5 estrellas en Google.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Confitería Sabi • Confitería Sabi">
+  <meta property="og:description" content="Hojaldres recién horneados, milhojas de merengue suizo y los legendarios pasteles de carne oriolanos. Tradición y repostería artesana para tus mejores momentos.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=80">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #92400e;
+      --secondary: #b45309;
+      --bg: #f8fafc;
+      --text: #0f172a;
+      --muted: #64748b;
+      --card-bg: #ffffff;
+      --border: rgba(0, 0, 0, 0.08);
+      --radius: 16px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, .brand-title {
+      font-family: 'Outfit', sans-serif;
+      letter-spacing: -0.02em;
+    }
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    
+    /* Top Bar */
+    .top-bar {
+      background: #0f172a;
+      color: #94a3b8;
+      font-size: 0.85rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(16px);
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 76px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+      list-style: none;
+    }
+    .nav-menu a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .nav-menu a:hover {
+      color: var(--primary);
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff !important;
+      padding: 0.75rem 1.65rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.25);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px -5px rgba(0,0,0,0.35);
+      filter: brightness(1.08);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--text) !important;
+      border: 1.5px solid var(--border);
+      padding: 0.7rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.25s;
+    }
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary) !important;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 5rem 0 4.5rem;
+      position: relative;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1.1rem;
+      border-radius: 9999px;
+      background: rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: 3.25rem;
+      line-height: 1.15;
+      font-weight: 900;
+      margin-bottom: 1.25rem;
+    }
+    .hero-lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 2.25rem;
+      max-width: 580px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.75rem;
+    }
+    .trust-strip {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.75rem;
+    }
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+    .stars {
+      color: #f59e0b;
+      letter-spacing: 2px;
+    }
+    .hero-visual {
+      position: relative;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.4);
+      border: 1px solid var(--border);
+    }
+    .hero-visual img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+    .hero-visual:hover img {
+      transform: scale(1.04);
+    }
+    .hero-glass-card {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;
+      padding: 1.25rem 1.5rem;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Features Grid */
+    .section {
+      padding: 5.5rem 0;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 3.5rem;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+    }
+    .section-sub {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.75rem;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.25rem;
+      transition: all 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.15);
+    }
+    .feature-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: rgba(0,0,0,0.04);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 1.25rem;
+      color: var(--primary);
+    }
+
+    /* Filterable Services / Catalog */
+    .filter-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .tab-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 0.6rem 1.4rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.75rem;
+    }
+    .service-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s;
+    }
+    .service-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-4px);
+    }
+    .service-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .service-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: 6px;
+      background: #f1f5f9;
+      color: var(--primary);
+    }
+    .service-price {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--primary);
+    }
+    .service-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+    }
+    .service-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Reviews Section */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .review-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      position: relative;
+    }
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+    }
+
+    /* FAQ Accordion */
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: transparent;
+      border: none;
+      padding: 1.35rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+    .faq-answer {
+      padding: 0 1.5rem 1.35rem;
+      color: var(--muted);
+      display: none;
+      line-height: 1.6;
+    }
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+    .faq-icon {
+      transition: transform 0.3s;
+    }
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    /* Location & Map */
+    .location-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+    }
+    .location-info {
+      padding: 3.5rem;
+    }
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .info-icon {
+      font-size: 1.5rem;
+    }
+
+    /* Modal Overlay */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-content {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      max-width: 520px;
+      width: 100%;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+      animation: modalIn 0.3s ease-out;
+    }
+    @keyframes modalIn {
+      from { opacity: 0; transform: translateY(20px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #f1f5f9;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      color: var(--text);
+      font-size: 1.25rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .form-input {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      border: 1.5px solid var(--border);
+      background: #f8fafc;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+    .form-input:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    /* Sticky Mobile Bar */
+    .mobile-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      gap: 0.75rem;
+    }
+    .mobile-bar a {
+      flex: 1;
+      text-align: center;
+      padding: 0.8rem;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .mobile-call {
+      background: #e2e8f0;
+      color: var(--text);
+    }
+    .mobile-wa {
+      background: #25d366;
+      color: #ffffff;
+    }
+
+    /* Footer */
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 4rem 0 5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-visual img { height: 380px; }
+      .location-card { grid-template-columns: 1fr; }
+      .location-info { padding: 2rem; }
+      .nav-menu { display: none; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .mobile-bar { display: flex; }
+      body { padding-bottom: 70px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div>📍 Plaza Nueva, 2, 03300 Orihuela, Alicante • Orihuela (Alicante)</div>
+      <div style="display: flex; gap: 1.5rem;">
+        <span>🕒 Atención: Lunes a Viernes</span>
+        <span>📞 Tel: <a href="tel:966742308" style="color: #cbd5e1; text-decoration: none; font-weight: 700;">966 74 23 08</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <span class="brand-icon">✓</span>
+        <span>Confitería Sabi</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#por-que-nosotros">Garantías</a></li>
+        <li><a href="#opiniones">Opiniones (4.5★)</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li><a href="#contacto">Ubicación</a></li>
+      </ul>
+      <div style="display: flex; gap: 0.75rem;">
+        <button onclick="openModal()" class="btn-primary">
+          📅 Hacer Encargo Online
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">
+          🥐 Plaza Nueva, 2 • Tradición Artesanal en el Corazón de Orihuela
+        </div>
+        <h1>El Sabor Inconfundible de Nuestra Tierra en Plaza Nueva</h1>
+        <p class="hero-lead">
+          Hojaldres recién horneados, milhojas de merengue suizo y los legendarios pasteles de carne oriolanos. Tradición y repostería artesana para tus mejores momentos.
+        </p>
+        <div class="hero-actions">
+          <button onclick="openModal()" class="btn-primary" style="font-size: 1.05rem; padding: 0.9rem 2rem;">
+            📅 Hacer Encargo Online
+          </button>
+          <a href="https://wa.me/34966742308?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20en%20Confiter%C3%ADa%20Sabi%20(Orihuela)." target="_blank" rel="noopener noreferrer" class="btn-outline">
+            💬 WhatsApp Inmediato
+          </a>
+        </div>
+        <div class="trust-strip">
+          <div class="trust-badge">
+            <span class="stars">★★★★★</span>
+            <span><strong>4.5</strong> / 5.0 en Google</span>
+          </div>
+          <div class="trust-badge">
+            <span>🛡️ 120+ Clientes Satisfechos</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1200&q=80" alt="Confitería Sabi en Orihuela" loading="lazy">
+        <div class="hero-glass-card">
+          <div>
+            <div style="font-weight: 800; font-size: 1.05rem;">Confitería Sabi</div>
+            <div style="font-size: 0.85rem; color: var(--muted);">Plaza Nueva</div>
+          </div>
+          <button onclick="openModal()" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+            Consultar →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Pillars -->
+  <section id="por-que-nosotros" class="section" style="background: rgba(0,0,0,0.02); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">¿Por Qué Confiar en Confitería Sabi?</h2>
+        <p class="section-sub">Atención personalizada, profesionalidad contrastada y la máxima dedicación en cada servicio en Orihuela.</p>
+      </div>
+      <div class="features-grid">
+        
+          <div class="feature-card">
+            <div class="feature-icon">🌾</div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Materia Prima Noble</h3>
+            <p style="color: var(--muted); font-size: 0.95rem;">Harinas seleccionadas, mantequilla auténtica y verduras frescas de la huerta.</p>
+          </div>
+        
+          <div class="feature-card">
+            <div class="feature-icon">🔥</div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Horno Diario Continuo</h3>
+            <p style="color: var(--muted); font-size: 0.95rem;">Tandas de pasteles calientes a lo largo de toda la mañana.</p>
+          </div>
+        
+          <div class="feature-card">
+            <div class="feature-icon">☕</div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Terraza Privilegiada</h3>
+            <p style="color: var(--muted); font-size: 0.95rem;">Disfruta en la terraza de Plaza Nueva en pleno centro histórico.</p>
+          </div>
+        
+          <div class="feature-card">
+            <div class="feature-icon">🎂</div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Encargos a Medida</h3>
+            <p style="color: var(--muted); font-size: 0.95rem;">Preparamos catering dulce y salado para reuniones familiares.</p>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Filterable Catalog -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Especialidades & Servicios</h2>
+        <p class="section-sub">Soluciones diseñadas a medida para ti. Selecciona una categoría para ver los detalles.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        
+          <button class="tab-btn active" onclick="filterCategory('Todos', this)">
+            Todos
+          </button>
+        
+          <button class="tab-btn " onclick="filterCategory('Salado', this)">
+            Salado
+          </button>
+        
+          <button class="tab-btn " onclick="filterCategory('Dulce', this)">
+            Dulce
+          </button>
+        
+          <button class="tab-btn " onclick="filterCategory('Tartas', this)">
+            Tartas
+          </button>
+        
+          <button class="tab-btn " onclick="filterCategory('Cafetería', this)">
+            Cafetería
+          </button>
+        
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="servicesGrid">
+        
+          <div class="service-card" data-cat="Salado">
+            <div>
+              <div class="service-meta">
+                <span class="service-tag">Salado</span>
+                <span class="service-price">Especialidad</span>
+              </div>
+              <h3>Pastel de Carne Típico de Orihuela</h3>
+              <p>Fino hojaldre en espiral relleno de carne magra seleccionada, huevo duro y especias tradicionales.</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem;">
+              <span style="font-size: 0.85rem; color: var(--muted);">⏱️ Recién horneado</span>
+              <button onclick="openModal('Pastel de Carne Típico de Orihuela')" style="background: transparent; border: none; color: var(--primary); font-weight: 700; cursor: pointer;">
+                Solicitar →
+              </button>
+            </div>
+          </div>
+        
+          <div class="service-card" data-cat="Dulce">
+            <div>
+              <div class="service-meta">
+                <span class="service-tag">Dulce</span>
+                <span class="service-price">Artesano</span>
+              </div>
+              <h3>Milhojas de Merengue & Crema</h3>
+              <p>Crujientes capas de masa de hojaldre con mantequilla, rellenas de merengue horneado suave.</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem;">
+              <span style="font-size: 0.85rem; color: var(--muted);">⏱️ Elaboración diaria</span>
+              <button onclick="openModal('Milhojas de Merengue & Crema')" style="background: transparent; border: none; color: var(--primary); font-weight: 700; cursor: pointer;">
+                Solicitar →
+              </button>
+            </div>
+          </div>
+        
+          <div class="service-card" data-cat="Dulce">
+            <div>
+              <div class="service-meta">
+                <span class="service-tag">Dulce</span>
+                <span class="service-price">Tradición</span>
+              </div>
+              <h3>Palmeras de Chocolate & Azúcar</h3>
+              <p>Bañadas en chocolate negro puro o caramelizadas a fuego suave con toque crujiente.</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem;">
+              <span style="font-size: 0.85rem; color: var(--muted);">⏱️ Tamaño XL</span>
+              <button onclick="openModal('Palmeras de Chocolate & Azúcar')" style="background: transparent; border: none; color: var(--primary); font-weight: 700; cursor: pointer;">
+                Solicitar →
+              </button>
+            </div>
+          </div>
+        
+          <div class="service-card" data-cat="Tartas">
+            <div>
+              <div class="service-meta">
+                <span class="service-tag">Tartas</span>
+                <span class="service-price">Personalizada</span>
+              </div>
+              <h3>Tartas de Celebración por Encargo</h3>
+              <p>San Marcos, tarta de tres chocolates, red velvet y milhojas para comuniones, bodas y aniversarios.</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem;">
+              <span style="font-size: 0.85rem; color: var(--muted);">⏱️ Bajo pedido</span>
+              <button onclick="openModal('Tartas de Celebración por Encargo')" style="background: transparent; border: none; color: var(--primary); font-weight: 700; cursor: pointer;">
+                Solicitar →
+              </button>
+            </div>
+          </div>
+        
+          <div class="service-card" data-cat="Salado">
+            <div>
+              <div class="service-meta">
+                <span class="service-tag">Salado</span>
+                <span class="service-price">Surtido</span>
+              </div>
+              <h3>Bandejas de Empanadillas & Salados</h3>
+              <p>Atún con tomate de la huerta, espinacas con piñones, pollo asado y sobrasada con miel.</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem;">
+              <span style="font-size: 0.85rem; color: var(--muted);">⏱️ Para eventos</span>
+              <button onclick="openModal('Bandejas de Empanadillas & Salados')" style="background: transparent; border: none; color: var(--primary); font-weight: 700; cursor: pointer;">
+                Solicitar →
+              </button>
+            </div>
+          </div>
+        
+          <div class="service-card" data-cat="Cafetería">
+            <div>
+              <div class="service-meta">
+                <span class="service-tag">Cafetería</span>
+                <span class="service-price">Completo</span>
+              </div>
+              <h3>Desayunos en Terraza de Plaza Nueva</h3>
+              <p>Café de tueste natural, zumo de naranja recién exprimido y tostadas en pan de pueblo.</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem;">
+              <span style="font-size: 0.85rem; color: var(--muted);">⏱️ 08:00 a 12:00</span>
+              <button onclick="openModal('Desayunos en Terraza de Plaza Nueva')" style="background: transparent; border: none; color: var(--primary); font-weight: 700; cursor: pointer;">
+                Solicitar →
+              </button>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Verified Google Reviews -->
+  <section id="opiniones" class="section" style="background: rgba(0,0,0,0.02); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Opiniones Reales de Orihuela</h2>
+        <p class="section-sub">La satisfacción de nuestros vecinos y clientes es nuestro mayor orgullo. <strong>4.5 estrellas</strong> en Google Maps (120+ reseñas).</p>
+      </div>
+      <div class="reviews-grid">
+        
+          <div class="review-card">
+            <div class="stars" style="margin-bottom: 1rem;">★★★★★</div>
+            <p style="font-size: 1.05rem; font-style: italic; color: var(--text);">"Para mí el mejor pastel de carne de Orihuela. El hojaldre es fino y crujiente y el relleno generoso y jugoso."</p>
+            <div class="review-author">
+              <div class="avatar">V</div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem;">Vicente Marín</strong>
+                <span style="font-size: 0.8rem; color: var(--muted);">Cliente verificado en Google Maps</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="review-card">
+            <div class="stars" style="margin-bottom: 1rem;">★★★★★</div>
+            <p style="font-size: 1.05rem; font-style: italic; color: var(--text);">"Desayunar en su terraza de la Plaza Nueva un café con milhojas es uno de los mayores placeres de la ciudad."</p>
+            <div class="review-author">
+              <div class="avatar">E</div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem;">Elena Satorre</strong>
+                <span style="font-size: 0.8rem; color: var(--muted);">Cliente verificado en Google Maps</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="review-card">
+            <div class="stars" style="margin-bottom: 1rem;">★★★★★</div>
+            <p style="font-size: 1.05rem; font-style: italic; color: var(--text);">"Encargamos los salados y la tarta para el cumpleaños de mi padre y todos los invitados quedaron fascinados."</p>
+            <div class="review-author">
+              <div class="avatar">C</div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem;">Cristina Lucas</strong>
+                <span style="font-size: 0.8rem; color: var(--muted);">Cliente verificado en Google Maps</span>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://maps.google.com/?q=Confiteria+Sabi+Plaza+Nueva+2+Orihuela" target="_blank" rel="noopener noreferrer" class="btn-outline">
+          ⭐ Ver todas las reseñas en Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Accordion -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-sub">Resolvemos tus dudas principales sobre nuestros servicios en Orihuela.</p>
+      </div>
+      <div class="faq-container">
+        
+          <div class="faq-item open" onclick="toggleFaq(this)">
+            <button class="faq-question">
+              <span>¿Con cuánta antelación debo encargar una tarta?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Aconsejamos realizar el encargo con al menos 24 a 48 horas de antelación para asegurar disponibilidad.</p>
+            </div>
+          </div>
+        
+          <div class="faq-item " onclick="toggleFaq(this)">
+            <button class="faq-question">
+              <span>¿Hacéis pasteles de carne para llevar en cantidad?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sí, preparamos cajas listas para llevar a reuniones o viajes para que disfrutes del sabor de Orihuela.</p>
+            </div>
+          </div>
+        
+          <div class="faq-item " onclick="toggleFaq(this)">
+            <button class="faq-question">
+              <span>¿Cuál es vuestro horario?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>De lunes a sábado de 08:00 a 14:00 y de 16:30 a 21:00.</p>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact -->
+  <section id="contacto" class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="location-card">
+        <div class="location-info">
+          <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Visítanos en Orihuela</h2>
+          <p style="color: var(--muted); margin-bottom: 2.5rem;">Estamos a tu entera disposición. Contacta hoy mismo o visítanos en nuestro local.</p>
+          
+          <div class="info-row">
+            <span class="info-icon">📍</span>
+            <div>
+              <strong>Dirección Física</strong>
+              <p style="color: var(--muted);">Plaza Nueva, 2, 03300 Orihuela, Alicante</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span class="info-icon">📞</span>
+            <div>
+              <strong>Teléfono Directo</strong>
+              <p><a href="tel:966742308" style="color: var(--primary); text-decoration: none; font-weight: 700;">966 74 23 08</a></p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span class="info-icon">💬</span>
+            <div>
+              <strong>Atención por WhatsApp</strong>
+              <p><a href="https://wa.me/34966742308?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20en%20Confiter%C3%ADa%20Sabi%20(Orihuela)." target="_blank" style="color: #25d366; text-decoration: none; font-weight: 700;">Enviar Mensaje Directo</a></p>
+            </div>
+          </div>
+
+          <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button onclick="openModal()" class="btn-primary">
+              📅 Hacer Encargo Online
+            </button>
+            <a href="https://maps.google.com/?q=Confiteria+Sabi+Plaza+Nueva+2+Orihuela" target="_blank" rel="noopener noreferrer" class="btn-outline">
+              🧭 Cómo Llegar (Maps)
+            </a>
+          </div>
+        </div>
+        <div style="min-height: 400px; background: #e2e8f0;">
+          <iframe 
+            src="https://maps.google.com/maps?q=Plaza%20Nueva%2C%202%2C%2003300%20Orihuela%2C%20Alicante&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0; min-height: 420px; display: block;" 
+            allowfullscreen="" 
+            loading="lazy"
+            title="Mapa de Confitería Sabi">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 style="font-size: 1.4rem; color: #ffffff; margin-bottom: 0.8rem;">Confitería Sabi</h3>
+          <p style="max-width: 420px; line-height: 1.6; margin-bottom: 1.5rem;">
+            Hojaldres recién horneados, milhojas de merengue suizo y los legendarios pasteles de carne oriolanos. Tradición y repostería artesana para tus mejores momentos.
+          </p>
+          <p style="font-size: 0.85rem; color: #64748b;">© 2026 Confitería Sabi • Orihuela (Alicante). Todos los derechos reservados.</p>
+        </div>
+        <div>
+          <h4 style="color: #ffffff; margin-bottom: 1rem;">Navegación</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+            <li><a href="#servicios" style="color: #94a3b8; text-decoration: none;">Especialidades</a></li>
+            <li><a href="#por-que-nosotros" style="color: #94a3b8; text-decoration: none;">Garantías</a></li>
+            <li><a href="#opiniones" style="color: #94a3b8; text-decoration: none;">Reseñas de Clientes</a></li>
+            <li><a href="#contacto" style="color: #94a3b8; text-decoration: none;">Ubicación & Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: #ffffff; margin-bottom: 1rem;">Propuesta Comercial</h4>
+          <p style="font-size: 0.85rem; line-height: 1.6;">
+            Propuesta web de alta conversión desarrollada para <strong>Confitería Sabi</strong> por desarrolladores web de Orihuela.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Interactivo -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;" id="modalTitleText">Encargar Pastel de Carne o Tartas en Confitería Sabi</h3>
+      <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 1.5rem;">Déjanos tus datos y nos pondremos en contacto contigo de inmediato.</p>
+
+      <form onsubmit="handleModalSubmit(event)">
+        <div class="form-group">
+          <label class="form-label">Nombre Completo *</label>
+          <input type="text" id="custName" class="form-input" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Teléfono o WhatsApp *</label>
+          <input type="tel" id="custPhone" class="form-input" placeholder="Ej: 600 000 000" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Servicio de Interés</label>
+          <select id="custService" class="form-input">
+            <option value="Pastel de Carne Típico de Orihuela">Pastel de Carne Típico de Orihuela</option><option value="Milhojas de Merengue & Crema">Milhojas de Merengue & Crema</option><option value="Palmeras de Chocolate & Azúcar">Palmeras de Chocolate & Azúcar</option><option value="Tartas de Celebración por Encargo">Tartas de Celebración por Encargo</option><option value="Bandejas de Empanadillas & Salados">Bandejas de Empanadillas & Salados</option><option value="Desayunos en Terraza de Plaza Nueva">Desayunos en Terraza de Plaza Nueva</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Preferencia Horaria</label>
+          <select id="custTime" class="form-input">
+            <option>Mañanas (09:00 - 13:30)</option>
+            <option>Tardes (16:30 - 20:30)</option>
+            <option>Lo antes posible</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem; font-size: 1rem; padding: 0.9rem;">
+          Confirmar Solicitud vía WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky Bottom Bar -->
+  <div class="mobile-bar">
+    <a href="tel:966742308" class="mobile-call">
+      📞 Llamar
+    </a>
+    <a href="https://wa.me/34966742308?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20en%20Confiter%C3%ADa%20Sabi%20(Orihuela)." target="_blank" rel="noopener noreferrer" class="mobile-wa">
+      💬 WhatsApp
+    </a>
+  </div>
+
+  <script>
+    function toggleFaq(el) {
+      const isOpen = el.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('open'));
+      if (!isOpen) {
+        el.classList.add('open');
+      }
+    }
+
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('#servicesGrid .service-card');
+      cards.forEach(card => {
+        if (cat === 'Todos' || card.getAttribute('data-cat') === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openModal(serviceName) {
+      if (serviceName) {
+        const sel = document.getElementById('custService');
+        if (sel) sel.value = serviceName;
+      }
+      document.getElementById('bookingModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('bookingModal').classList.remove('active');
+    }
+
+    document.getElementById('bookingModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+      const service = document.getElementById('custService').value;
+      const time = document.getElementById('custTime').value;
+
+      const text = `Hola, me llamo ${name} (${phone}). Me gustaría solicitar cita/información sobre "${service}" en horario "${time}" para Confitería Sabi en Orihuela.`;
+      const url = `https://wa.me/34966742308?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+      closeModal();
+    }
+  </script>
+</body>
+</html>

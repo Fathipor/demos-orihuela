@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reformas Generales AMR | Reformas Integrales, Cocinas, Baños & Coordinación de Gremios</title>
+  <meta name="description" content="Presupuestos cerrados, cumplimiento estricto de plazos y acabados de máxima calidad en Orihuela y Vega Baja. Nos encargamos de todo de principio a fin. Dirección: Calle La Paz, nº 4 Bajo Izq., 03300 Orihuela, Alicante. Tel: 635 004 160. Valoración de 4.8 estrellas en Google.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Reformas Generales AMR • Reformas Generales AMR">
+  <meta property="og:description" content="Presupuestos cerrados, cumplimiento estricto de plazos y acabados de máxima calidad en Orihuela y Vega Baja. Nos encargamos de todo de principio a fin.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #c2410c;
+      --secondary: #ea580c;
+      --bg: #0b0f17;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --card-bg: #1e293b;
+      --border: rgba(255, 255, 255, 0.08);
+      --radius: 16px;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4, .brand-title {
+      font-family: 'Outfit', sans-serif;
+      letter-spacing: -0.02em;
+    }
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    
+    /* Top Bar */
+    .top-bar {
+      background: #020617;
+      color: #94a3b8;
+      font-size: 0.85rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* Navbar */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(16px);
+      background: rgba(11, 15, 23, 0.92);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 76px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 1.35rem;
+      font-weight: 800;
+    }
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 900;
+      font-size: 1.1rem;
+    }
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 1.75rem;
+      list-style: none;
+    }
+    .nav-menu a {
+      color: var(--muted);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .nav-menu a:hover {
+      color: var(--primary);
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff !important;
+      padding: 0.75rem 1.65rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 10px 25px -5px rgba(0,0,0,0.25);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px -5px rgba(0,0,0,0.35);
+      filter: brightness(1.08);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--text) !important;
+      border: 1.5px solid var(--border);
+      padding: 0.7rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.25s;
+    }
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary) !important;
+    }
+
+    /* Hero */
+    .hero {
+      padding: 5rem 0 4.5rem;
+      position: relative;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1.1rem;
+      border-radius: 9999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border);
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: 3.25rem;
+      line-height: 1.15;
+      font-weight: 900;
+      margin-bottom: 1.25rem;
+    }
+    .hero-lead {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 2.25rem;
+      max-width: 580px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.75rem;
+    }
+    .trust-strip {
+      display: flex;
+      align-items: center;
+      gap: 2.5rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.75rem;
+    }
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+    }
+    .stars {
+      color: #f59e0b;
+      letter-spacing: 2px;
+    }
+    .hero-visual {
+      position: relative;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.4);
+      border: 1px solid var(--border);
+    }
+    .hero-visual img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s ease;
+    }
+    .hero-visual:hover img {
+      transform: scale(1.04);
+    }
+    .hero-glass-card {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      right: 24px;
+      padding: 1.25rem 1.5rem;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(12px);
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Features Grid */
+    .section {
+      padding: 5.5rem 0;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 3.5rem;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.8rem;
+    }
+    .section-sub {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.75rem;
+    }
+    .feature-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.25rem;
+      transition: all 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+      box-shadow: 0 20px 30px -10px rgba(0,0,0,0.15);
+    }
+    .feature-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 1.25rem;
+      color: var(--primary);
+    }
+
+    /* Filterable Services / Catalog */
+    .filter-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .tab-btn {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 0.6rem 1.4rem;
+      border-radius: 9999px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn.active, .tab-btn:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.75rem;
+    }
+    .service-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s;
+    }
+    .service-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-4px);
+    }
+    .service-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .service-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 0.25rem 0.75rem;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.08);
+      color: var(--primary);
+    }
+    .service-price {
+      font-weight: 800;
+      font-size: 1.15rem;
+      color: var(--primary);
+    }
+    .service-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+    }
+    .service-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Reviews Section */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .review-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      position: relative;
+    }
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+    }
+
+    /* FAQ Accordion */
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: transparent;
+      border: none;
+      padding: 1.35rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--text);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+    .faq-answer {
+      padding: 0 1.5rem 1.35rem;
+      color: var(--muted);
+      display: none;
+      line-height: 1.6;
+    }
+    .faq-item.open .faq-answer {
+      display: block;
+    }
+    .faq-icon {
+      transition: transform 0.3s;
+    }
+    .faq-item.open .faq-icon {
+      transform: rotate(180deg);
+    }
+
+    /* Location & Map */
+    .location-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+    }
+    .location-info {
+      padding: 3.5rem;
+    }
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .info-icon {
+      font-size: 1.5rem;
+    }
+
+    /* Modal Overlay */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(8px);
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-content {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      max-width: 520px;
+      width: 100%;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+      animation: modalIn 0.3s ease-out;
+    }
+    @keyframes modalIn {
+      from { opacity: 0; transform: translateY(20px) scale(0.97); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .modal-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #1e293b;
+      border: none;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      color: var(--text);
+      font-size: 1.25rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .form-input {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border-radius: 12px;
+      border: 1.5px solid var(--border);
+      background: #1e293b;
+      color: var(--text);
+      font-family: inherit;
+      font-size: 0.95rem;
+    }
+    .form-input:focus {
+      outline: none;
+      border-color: var(--primary);
+    }
+
+    /* Sticky Mobile Bar */
+    .mobile-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      gap: 0.75rem;
+    }
+    .mobile-bar a {
+      flex: 1;
+      text-align: center;
+      padding: 0.8rem;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .mobile-call {
+      background: #334155;
+      color: var(--text);
+    }
+    .mobile-wa {
+      background: #25d366;
+      color: #ffffff;
+    }
+
+    /* Footer */
+    footer {
+      background: #020617;
+      color: #94a3b8;
+      padding: 4rem 0 5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
+      .hero-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .hero h1 { font-size: 2.5rem; }
+      .hero-visual img { height: 380px; }
+      .location-card { grid-template-columns: 1fr; }
+      .location-info { padding: 2rem; }
+      .nav-menu { display: none; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .mobile-bar { display: flex; }
+      body { padding-bottom: 70px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div>📍 Calle La Paz, nº 4 Bajo Izq., 03300 Orihuela, Alicante • Orihuela (Alicante)</div>
+      <div style="display: flex; gap: 1.5rem;">
+        <span>🕒 Atención: Lunes a Viernes</span>
+        <span>📞 Tel: <a href="tel:635004160" style="color: #cbd5e1; text-decoration: none; font-weight: 700;">635 004 160</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-inner">
+      <a href="#" class="brand">
+        <span class="brand-icon">✓</span>
+        <span>Reformas Generales AMR</span>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#por-que-nosotros">Garantías</a></li>
+        <li><a href="#opiniones">Opiniones (4.8★)</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li><a href="#contacto">Ubicación</a></li>
+      </ul>
+      <div style="display: flex; gap: 0.75rem;">
+        <button onclick="openModal()" class="btn-primary">
+          📅 Pedir Presupuesto Gratuito
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">
+          🔨 C/ La Paz, 4 • Presupuesto y Medición Gratuita sin Compromiso
+        </div>
+        <h1>Hacemos Realidad la Reforma de tus Sueños sin Sorpresas</h1>
+        <p class="hero-lead">
+          Presupuestos cerrados, cumplimiento estricto de plazos y acabados de máxima calidad en Orihuela y Vega Baja. Nos encargamos de todo de principio a fin.
+        </p>
+        <div class="hero-actions">
+          <button onclick="openModal()" class="btn-primary" style="font-size: 1.05rem; padding: 0.9rem 2rem;">
+            📅 Pedir Presupuesto Gratuito
+          </button>
+          <a href="https://wa.me/34635004160?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20en%20Reformas%20Generales%20AMR%20(Orihuela)." target="_blank" rel="noopener noreferrer" class="btn-outline">
+            💬 WhatsApp Inmediato
+          </a>
+        </div>
+        <div class="trust-strip">
+          <div class="trust-badge">
+            <span class="stars">★★★★★</span>
+            <span><strong>4.8</strong> / 5.0 en Google</span>
+          </div>
+          <div class="trust-badge">
+            <span>🛡️ 25+ Clientes Satisfechos</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80" alt="Reformas Generales AMR en Orihuela" loading="lazy">
+        <div class="hero-glass-card">
+          <div>
+            <div style="font-weight: 800; font-size: 1.05rem;">Reformas Generales AMR</div>
+            <div style="font-size: 0.85rem; color: var(--muted);">Calle La Paz</div>
+          </div>
+          <button onclick="openModal()" class="btn-primary" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+            Consultar →
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Pillars -->
+  <section id="por-que-nosotros" class="section" style="background: rgba(255,255,255,0.02); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">¿Por Qué Confiar en Reformas Generales AMR?</h2>
+        <p class="section-sub">Atención personalizada, profesionalidad contrastada y la máxima dedicación en cada servicio en Orihuela.</p>
+      </div>
+      <div class="features-grid">
+        
+          <div class="feature-card">
+            <div class="feature-icon">📝</div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Contrato & Plazos Fijos</h3>
+            <p style="color: var(--muted); font-size: 0.95rem;">Garantizamos por contrato la fecha de inicio y finalización de tu obra.</p>
+          </div>
+        
+          <div class="feature-card">
+            <div class="feature-icon">👷</div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Gremios Propios</h3>
+            <p style="color: var(--muted); font-size: 0.95rem;">Albañiles, fontaneros, electricistas y pintores coordinados por un solo jefe de obra.</p>
+          </div>
+        
+          <div class="feature-card">
+            <div class="feature-icon">📐</div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Medición in Situ Gratis</h3>
+            <p style="color: var(--muted); font-size: 0.95rem;">Nos desplazamos a tu domicilio en Orihuela sin coste para tomar medidas.</p>
+          </div>
+        
+          <div class="feature-card">
+            <div class="feature-icon">🛡️</div>
+            <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem;">Garantía de 2 Años</h3>
+            <p style="color: var(--muted); font-size: 0.95rem;">Total cobertura post-obra en materiales e instalaciones.</p>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Filterable Catalog -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Especialidades & Servicios</h2>
+        <p class="section-sub">Soluciones diseñadas a medida para ti. Selecciona una categoría para ver los detalles.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        
+          <button class="tab-btn active" onclick="filterCategory('Todos', this)">
+            Todos
+          </button>
+        
+          <button class="tab-btn " onclick="filterCategory('Integrales', this)">
+            Integrales
+          </button>
+        
+          <button class="tab-btn " onclick="filterCategory('Baños', this)">
+            Baños
+          </button>
+        
+          <button class="tab-btn " onclick="filterCategory('Cocinas', this)">
+            Cocinas
+          </button>
+        
+          <button class="tab-btn " onclick="filterCategory('Pintura', this)">
+            Pintura
+          </button>
+        
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="servicesGrid">
+        
+          <div class="service-card" data-cat="Integrales">
+            <div>
+              <div class="service-meta">
+                <span class="service-tag">Integrales</span>
+                <span class="service-price">Presupuesto cerrado</span>
+              </div>
+              <h3>Reforma Integral de Pisos & Viviendas</h3>
+              <p>Demoliciones, redistribución de tabiquería, fontanería, electricidad con boletín oficial y carpintería.</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem;">
+              <span style="font-size: 0.85rem; color: var(--muted);">⏱️ Llave en mano</span>
+              <button onclick="openModal('Reforma Integral de Pisos & Viviendas')" style="background: transparent; border: none; color: var(--primary); font-weight: 700; cursor: pointer;">
+                Solicitar →
+              </button>
+            </div>
+          </div>
+        
+          <div class="service-card" data-cat="Baños">
+            <div>
+              <div class="service-meta">
+                <span class="service-tag">Baños</span>
+                <span class="service-price">Desde 850€</span>
+              </div>
+              <h3>Cambio de Bañera por Plato de Ducha</h3>
+              <p>Plato de ducha antideslizante de resina y carga mineral, mampara de cristal templado y grifería termostática.</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem;">
+              <span style="font-size: 0.85rem; color: var(--muted);">⏱️ En 48 horas</span>
+              <button onclick="openModal('Cambio de Bañera por Plato de Ducha')" style="background: transparent; border: none; color: var(--primary); font-weight: 700; cursor: pointer;">
+                Solicitar →
+              </button>
+            </div>
+          </div>
+        
+          <div class="service-card" data-cat="Cocinas">
+            <div>
+              <div class="service-meta">
+                <span class="service-tag">Cocinas</span>
+                <span class="service-price">A medida</span>
+              </div>
+              <h3>Renovación Completa de Cocinas</h3>
+              <p>Mobiliario antihuellas con cierre amortiguado, encimeras porcelánicas o de cuarzo y tomas integradas.</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem;">
+              <span style="font-size: 0.85rem; color: var(--muted);">⏱️ Diseño 3D</span>
+              <button onclick="openModal('Renovación Completa de Cocinas')" style="background: transparent; border: none; color: var(--primary); font-weight: 700; cursor: pointer;">
+                Solicitar →
+              </button>
+            </div>
+          </div>
+        
+          <div class="service-card" data-cat="Pintura">
+            <div>
+              <div class="service-meta">
+                <span class="service-tag">Pintura</span>
+                <span class="service-price">Por m²</span>
+              </div>
+              <h3>Alisado de Gotelé & Pintura Plástica</h3>
+              <p>Eliminación del gotelé antiguo, enlucido a regla con masilla y dos manos de pintura mate lavable.</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem;">
+              <span style="font-size: 0.85rem; color: var(--muted);">⏱️ Acabado liso</span>
+              <button onclick="openModal('Alisado de Gotelé & Pintura Plástica')" style="background: transparent; border: none; color: var(--primary); font-weight: 700; cursor: pointer;">
+                Solicitar →
+              </button>
+            </div>
+          </div>
+        
+          <div class="service-card" data-cat="Integrales">
+            <div>
+              <div class="service-meta">
+                <span class="service-tag">Integrales</span>
+                <span class="service-price">Ahorro energético</span>
+              </div>
+              <h3>Aislamiento Térmico & Pladur</h3>
+              <p>Falsos techos, trasdosados acústicos y térmicos con lana de roca para reducir tu factura de luz.</p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 1rem;">
+              <span style="font-size: 0.85rem; color: var(--muted);">⏱️ Eficiencia A</span>
+              <button onclick="openModal('Aislamiento Térmico & Pladur')" style="background: transparent; border: none; color: var(--primary); font-weight: 700; cursor: pointer;">
+                Solicitar →
+              </button>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Verified Google Reviews -->
+  <section id="opiniones" class="section" style="background: rgba(255,255,255,0.02); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Opiniones Reales de Orihuela</h2>
+        <p class="section-sub">La satisfacción de nuestros vecinos y clientes es nuestro mayor orgullo. <strong>4.8 estrellas</strong> en Google Maps (25+ reseñas).</p>
+      </div>
+      <div class="reviews-grid">
+        
+          <div class="review-card">
+            <div class="stars" style="margin-bottom: 1rem;">★★★★★</div>
+            <p style="font-size: 1.05rem; font-style: italic; color: var(--text);">"Nos reformaron la cocina y dos baños en tiempo récord. Todo limpio, trabajadores educados y el resultado de revista."</p>
+            <div class="review-author">
+              <div class="avatar">F</div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem;">Francisco Bernabéu</strong>
+                <span style="font-size: 0.8rem; color: var(--muted);">Cliente verificado en Google Maps</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="review-card">
+            <div class="stars" style="margin-bottom: 1rem;">★★★★★</div>
+            <p style="font-size: 1.05rem; font-style: italic; color: var(--text);">"Cumplieron el presupuesto al céntimo sin los típicos sustos a mitad de obra. Muy recomendables en Orihuela."</p>
+            <div class="review-author">
+              <div class="avatar">L</div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem;">Lorena Marhuenda</strong>
+                <span style="font-size: 0.8rem; color: var(--muted);">Cliente verificado en Google Maps</span>
+              </div>
+            </div>
+          </div>
+        
+          <div class="review-card">
+            <div class="stars" style="margin-bottom: 1rem;">★★★★★</div>
+            <p style="font-size: 1.05rem; font-style: italic; color: var(--text);">"Cambié la bañera por ducha en casa de mis padres mayores en solo dos días. Máxima seguridad y calidad."</p>
+            <div class="review-author">
+              <div class="avatar">V</div>
+              <div>
+                <strong style="display: block; font-size: 0.95rem;">Vicente Quinto</strong>
+                <span style="font-size: 0.8rem; color: var(--muted);">Cliente verificado en Google Maps</span>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="https://maps.google.com/?q=Reformas+Generales+AMR+Calle+La+Paz+Orihuela" target="_blank" rel="noopener noreferrer" class="btn-outline">
+          ⭐ Ver todas las reseñas en Google Maps
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Accordion -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Preguntas Frecuentes</h2>
+        <p class="section-sub">Resolvemos tus dudas principales sobre nuestros servicios en Orihuela.</p>
+      </div>
+      <div class="faq-container">
+        
+          <div class="faq-item open" onclick="toggleFaq(this)">
+            <button class="faq-question">
+              <span>¿Cobráis por hacer el presupuesto?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>No, la visita a la vivienda, la toma de medidas y el presupuesto detallado por partidas son 100% gratuitos.</p>
+            </div>
+          </div>
+        
+          <div class="faq-item " onclick="toggleFaq(this)">
+            <button class="faq-question">
+              <span>¿Gestionáis los permisos de obra del Ayuntamiento?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>Sí, nos encargamos de tramitar las licencias de obra menor o mayor ante el Ayuntamiento de Orihuela.</p>
+            </div>
+          </div>
+        
+          <div class="faq-item " onclick="toggleFaq(this)">
+            <button class="faq-question">
+              <span>¿Dónde está vuestra oficina?</span>
+              <span class="faq-icon">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p>En Calle La Paz, nº 4 Bajo Izquierda, Orihuela.</p>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Contact -->
+  <section id="contacto" class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="location-card">
+        <div class="location-info">
+          <h2 style="font-size: 2.2rem; margin-bottom: 1rem;">Visítanos en Orihuela</h2>
+          <p style="color: var(--muted); margin-bottom: 2.5rem;">Estamos a tu entera disposición. Contacta hoy mismo o visítanos en nuestro local.</p>
+          
+          <div class="info-row">
+            <span class="info-icon">📍</span>
+            <div>
+              <strong>Dirección Física</strong>
+              <p style="color: var(--muted);">Calle La Paz, nº 4 Bajo Izq., 03300 Orihuela, Alicante</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span class="info-icon">📞</span>
+            <div>
+              <strong>Teléfono Directo</strong>
+              <p><a href="tel:635004160" style="color: var(--primary); text-decoration: none; font-weight: 700;">635 004 160</a></p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span class="info-icon">💬</span>
+            <div>
+              <strong>Atención por WhatsApp</strong>
+              <p><a href="https://wa.me/34635004160?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20en%20Reformas%20Generales%20AMR%20(Orihuela)." target="_blank" style="color: #25d366; text-decoration: none; font-weight: 700;">Enviar Mensaje Directo</a></p>
+            </div>
+          </div>
+
+          <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button onclick="openModal()" class="btn-primary">
+              📅 Pedir Presupuesto Gratuito
+            </button>
+            <a href="https://maps.google.com/?q=Reformas+Generales+AMR+Calle+La+Paz+Orihuela" target="_blank" rel="noopener noreferrer" class="btn-outline">
+              🧭 Cómo Llegar (Maps)
+            </a>
+          </div>
+        </div>
+        <div style="min-height: 400px; background: #e2e8f0;">
+          <iframe 
+            src="https://maps.google.com/maps?q=Calle%20La%20Paz%2C%20n%C2%BA%204%20Bajo%20Izq.%2C%2003300%20Orihuela%2C%20Alicante&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="100%" 
+            style="border:0; min-height: 420px; display: block;" 
+            allowfullscreen="" 
+            loading="lazy"
+            title="Mapa de Reformas Generales AMR">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3 style="font-size: 1.4rem; color: #ffffff; margin-bottom: 0.8rem;">Reformas Generales AMR</h3>
+          <p style="max-width: 420px; line-height: 1.6; margin-bottom: 1.5rem;">
+            Presupuestos cerrados, cumplimiento estricto de plazos y acabados de máxima calidad en Orihuela y Vega Baja. Nos encargamos de todo de principio a fin.
+          </p>
+          <p style="font-size: 0.85rem; color: #64748b;">© 2026 Reformas Generales AMR • Orihuela (Alicante). Todos los derechos reservados.</p>
+        </div>
+        <div>
+          <h4 style="color: #ffffff; margin-bottom: 1rem;">Navegación</h4>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.6rem;">
+            <li><a href="#servicios" style="color: #94a3b8; text-decoration: none;">Especialidades</a></li>
+            <li><a href="#por-que-nosotros" style="color: #94a3b8; text-decoration: none;">Garantías</a></li>
+            <li><a href="#opiniones" style="color: #94a3b8; text-decoration: none;">Reseñas de Clientes</a></li>
+            <li><a href="#contacto" style="color: #94a3b8; text-decoration: none;">Ubicación & Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color: #ffffff; margin-bottom: 1rem;">Propuesta Comercial</h4>
+          <p style="font-size: 0.85rem; line-height: 1.6;">
+            Propuesta web de alta conversión desarrollada para <strong>Reformas Generales AMR</strong> por desarrolladores web de Orihuela.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Interactivo -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h3 style="font-size: 1.6rem; margin-bottom: 0.5rem;" id="modalTitleText">Solicitar Presupuesto de Reforma sin Compromiso</h3>
+      <p style="color: var(--muted); font-size: 0.95rem; margin-bottom: 1.5rem;">Déjanos tus datos y nos pondremos en contacto contigo de inmediato.</p>
+
+      <form onsubmit="handleModalSubmit(event)">
+        <div class="form-group">
+          <label class="form-label">Nombre Completo *</label>
+          <input type="text" id="custName" class="form-input" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Teléfono o WhatsApp *</label>
+          <input type="tel" id="custPhone" class="form-input" placeholder="Ej: 600 000 000" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Servicio de Interés</label>
+          <select id="custService" class="form-input">
+            <option value="Reforma Integral de Pisos & Viviendas">Reforma Integral de Pisos & Viviendas</option><option value="Cambio de Bañera por Plato de Ducha">Cambio de Bañera por Plato de Ducha</option><option value="Renovación Completa de Cocinas">Renovación Completa de Cocinas</option><option value="Alisado de Gotelé & Pintura Plástica">Alisado de Gotelé & Pintura Plástica</option><option value="Aislamiento Térmico & Pladur">Aislamiento Térmico & Pladur</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Preferencia Horaria</label>
+          <select id="custTime" class="form-input">
+            <option>Mañanas (09:00 - 13:30)</option>
+            <option>Tardes (16:30 - 20:30)</option>
+            <option>Lo antes posible</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem; font-size: 1rem; padding: 0.9rem;">
+          Confirmar Solicitud vía WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Mobile Sticky Bottom Bar -->
+  <div class="mobile-bar">
+    <a href="tel:635004160" class="mobile-call">
+      📞 Llamar
+    </a>
+    <a href="https://wa.me/34635004160?text=Hola%2C%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios%20en%20Reformas%20Generales%20AMR%20(Orihuela)." target="_blank" rel="noopener noreferrer" class="mobile-wa">
+      💬 WhatsApp
+    </a>
+  </div>
+
+  <script>
+    function toggleFaq(el) {
+      const isOpen = el.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('open'));
+      if (!isOpen) {
+        el.classList.add('open');
+      }
+    }
+
+    function filterCategory(cat, btn) {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const cards = document.querySelectorAll('#servicesGrid .service-card');
+      cards.forEach(card => {
+        if (cat === 'Todos' || card.getAttribute('data-cat') === cat) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    function openModal(serviceName) {
+      if (serviceName) {
+        const sel = document.getElementById('custService');
+        if (sel) sel.value = serviceName;
+      }
+      document.getElementById('bookingModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('bookingModal').classList.remove('active');
+    }
+
+    document.getElementById('bookingModal').addEventListener('click', function(e) {
+      if (e.target === this) closeModal();
+    });
+
+    function handleModalSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('custName').value;
+      const phone = document.getElementById('custPhone').value;
+      const service = document.getElementById('custService').value;
+      const time = document.getElementById('custTime').value;
+
+      const text = `Hola, me llamo ${name} (${phone}). Me gustaría solicitar cita/información sobre "${service}" en horario "${time}" para Reformas Generales AMR en Orihuela.`;
+      const url = `https://wa.me/34635004160?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
+      closeModal();
+    }
+  </script>
+</body>
+</html>
